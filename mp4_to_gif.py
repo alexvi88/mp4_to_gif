@@ -3,9 +3,8 @@ from moviepy.editor import VideoFileClip
 from settings import directory_with_mp4, directory_for_gif
 
 
-videos = [file_name
-              for file_name in os.listdir(directory_with_mp4)
-              if os.path.splitext(file_name)[1] == ".mp4"]
+videos = [file_name for file_name in os.listdir(directory_with_mp4)
+          if os.path.splitext(file_name)[1] == ".mp4"]
 
 for video_name in videos:
     print(video_name)
